@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="customPrimary">#6874E8</color>
+    <color name="customTeste">#4A5859</color>
+    <color name="customProgressionBar">#D9D9D9</color>
+    <color name="colorRed">#fe4a49</color>
 </resources>
