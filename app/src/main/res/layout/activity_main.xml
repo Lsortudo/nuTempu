@@ -27,7 +27,6 @@
         app:layout_constraintRight_toRightOf="@id/glVerticalRight"
         app:layout_constraintTop_toTopOf="@+id/glHorizontalTop" />
 
-
     <androidx.cardview.widget.CardView
 
         android:id="@+id/cardview1"
@@ -106,7 +105,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="256dp"
+                android:layout_marginLeft="240dp"
                 android:drawableStart="@drawable/ic_baseline_local_shipping_24"
                 />
         </androidx.cardview.widget.CardView>
@@ -177,7 +176,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="72dp"
-            android:layout_marginEnd="192dp"
+            android:layout_marginEnd="160dp"
             app:cardBackgroundColor="#6874E8"
 
             app:cardCornerRadius="10dp" >
@@ -190,7 +189,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="128dp"
                 android:drawableStart="@drawable/ic_baseline_airplanemode_active_24"
                 />
         </androidx.cardview.widget.CardView>
@@ -261,7 +260,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="72dp"
-            android:layout_marginEnd="360dp"
+            android:layout_marginEnd="280dp"
             app:cardBackgroundColor="#FF7F11"
 
             app:cardCornerRadius="10dp" >
@@ -352,7 +351,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="256dp"
+                android:layout_marginLeft="240dp"
                 android:drawableStart="@drawable/ic_baseline_local_shipping_24"
                 />
         </androidx.cardview.widget.CardView>
@@ -380,7 +379,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="463dp" />
+        app:layout_constraintGuide_begin="379dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glVerticalLeft"
