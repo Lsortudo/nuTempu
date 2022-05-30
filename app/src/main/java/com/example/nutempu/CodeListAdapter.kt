@@ -1,19 +1,37 @@
 package com.example.nutempu
 
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.example.nutempu.databinding.CodeItemBinding
 import com.example.nutempu.model.Code
 
-class CodeListAdapter(private val codes: List<Code>,
-                      private val context: Context) : Adapter<CodeListAdapter.ViewHolder>() {
+class CodeListAdapter(
+    private val context: Context
+) : RecyclerView.Adapter<CodeListAdapter.ViewHolder>() {
 
-    override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
+    private val codes = arrayListOf<Code>()
+
+
+    fun addItem(code: Code){
+        codes.add(code)
+        notifyDataSetChanged()
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val code = codes[position]
         holder?.let {
             it.bindView(code)
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.code_item, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+
+        val view = CodeItemBinding.inflate(
+            LayoutInflater.from(parent.context), parent, false
+        )
         return ViewHolder(view)
     }
 
@@ -21,16 +39,17 @@ class CodeListAdapter(private val codes: List<Code>,
         return codes.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(val binding: CodeItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bindView(note: Code) {
-            val title = itemView.note_item_title
-            val description = itemView.note_item_description
+            val codObjeto = binding.codeItemTitle
+            val description = binding.codeItemDescription
 
-            title.text = note.title
-            description.text = note.description
+            codObjeto.text = note.objetos[0].codObjeto
+            description.text = note.objetos[0].eventos[0].descricao
         }
 
     }
+
 
 }
