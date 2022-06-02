@@ -27,13 +27,13 @@ Link to API (**docs**) -> [Correios.](https://cws.correios.com.br/ajuda)
  - [x] Project idea;
  - [x] Design;
  - [x] Readme;
- - [ ]  Project setup;
- - [ ]  Gradle updated;
- - [ ]  Main screen;
+ - [x]  Project setup;
+ - [x]  Gradle updated;
+ - [x]  Main screen;
  - [ ]  Add package screen;
  - [ ]  Track package screen;
- - [ ]  API connection;
- - [ ]  API data;
+ - [x]  API connection;
+ - [x]  API data;
  - [ ]  Main screen redesign with API data;
  - [ ]  Track package screen redesign with ROOM/Firebase data;
  - [ ]  Clipboard to paste on Add package tracking number  {**not listed as required, it's a plus**};
@@ -48,9 +48,9 @@ Link to API (**docs**) -> [Correios.](https://cws.correios.com.br/ajuda)
 > **Note:** The dates may be a little off due to forgetting to update them in real time;
 
 **May first week** - 	*Project Idea | Design | Dependencies | Layouts* <br> 
-**May second week** - *To be defined*<br> 
-**May third week** - *To be defined*<br> 
-**May fourth week** - *To be defined*<br> 
+**May second week** - *none*<br> 
+**May third week** - *none*<br> 
+**May fourth week** - *Main screen design | Gradle updated | API connection | API data*<br> 
 <br>
 **June first week** - *To be defined*<br> 
 **June second week** - *To be defined*<br> 

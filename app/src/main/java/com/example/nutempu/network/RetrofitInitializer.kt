@@ -9,6 +9,7 @@ class RetrofitInitializer {
 
     val interceptor: HttpLoggingInterceptor = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
     val client: OkHttpClient = OkHttpClient().newBuilder().addInterceptor(interceptor).build()
+    val BASE_URL: String = "https://proxyapp.correios.com.br/v1/"
 
     private val retrofit = Retrofit.Builder()
         .baseUrl("https://proxyapp.correios.com.br/v1/")
