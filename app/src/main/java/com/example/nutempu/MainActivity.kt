@@ -1,11 +1,13 @@
 package com.example.nutempu
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.nutempu.databinding.ActivityMainBinding
 import com.example.nutempu.model.Code
 import com.example.nutempu.network.RetrofitInitializer
 import retrofit2.Call
@@ -15,10 +17,18 @@ import javax.security.auth.callback.Callback
 class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btNewPackage.setOnClickListener {
+            Intent(this, AddPackageActivity::class.java).also {
+                startActivity(it)
+            }
+        }
 
         recyclerView = findViewById<RecyclerView>(R.id.code_item_recyclerview)
         recyclerView.layoutManager = LinearLayoutManager(this)

@@ -11,4 +11,5 @@
     <color name="customTeste">#4A5859</color>
     <color name="customProgressionBar">#D9D9D9</color>
     <color name="colorRed">#fe4a49</color>
+    <color name="colorEditText">#E5E5E5</color>
 </resources>

@@ -5,13 +5,21 @@
       <map>
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2775" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1775" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.263" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1775" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2775" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/drawable/pgradientbackground.xml" value="0.2775" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/drawable/roundcornerbackground.xml" value="0.263" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/drawable/roundcornerbutton.xml" value="0.263" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/drawable/roundcorneredittext.xml" value="0.263" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/drawable/sgradientbutton.xml" value="0.2775" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/layout/activity_add_package.xml" value="0.33" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/layout/activity_teste_api.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/layout/add_package.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/layout/code_item.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/layout/fragment_add_package.xml" value="0.33" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/layout/fragment_home.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/layout/layout_completo.xml" value="0.16822916666666668" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/nuTempu/app/src/main/res/layout/tela_teste.xml" value="0.27291666666666664" />
       </map>
