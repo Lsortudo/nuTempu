@@ -8,7 +8,8 @@ import retrofit2.http.Path
 interface CodeService {
 
     @GET("sro-rastro/{code}")
-    fun list(@Path("code") code : String = "LB524259080HK"
+    fun list(
+        @Path("code") code: String?
     ) : Call<Code>
 
 }

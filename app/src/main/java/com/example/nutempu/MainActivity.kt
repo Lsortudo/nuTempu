@@ -1,5 +1,6 @@
 package com.example.nutempu
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,7 +13,6 @@ import com.example.nutempu.model.Code
 import com.example.nutempu.network.RetrofitInitializer
 import retrofit2.Call
 import retrofit2.Response
-import javax.security.auth.callback.Callback
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,7 +34,10 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = CodeListAdapter( this)
 
-        val call = RetrofitInitializer().codeService().list()
+        val sharedPref = getSharedPreferences("preference_file_key", Context.MODE_PRIVATE)
+        val trackingNumber = sharedPref.getString("tracking_number", "")
+
+        val call = RetrofitInitializer().codeService().list(trackingNumber)
 
         call.enqueue(object : retrofit2.Callback<Code> {
             override fun onResponse(call: Call<Code>, response: Response<Code>) {
