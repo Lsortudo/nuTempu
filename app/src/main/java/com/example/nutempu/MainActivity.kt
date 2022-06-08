@@ -29,6 +29,17 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+        binding.btNewPackage2.setOnClickListener {
+            Intent(this, TrackPackageActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        /*binding.codeItemRecyclerview.setOnClickListener {
+            Intent(this, TrackPackageActivity::class.java).also {
+                startActivity(it)
+            }
+        }*/
 
         recyclerView = findViewById<RecyclerView>(R.id.code_item_recyclerview)
         recyclerView.layoutManager = LinearLayoutManager(this)

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pgradientbackground"
+    tools:context=".TrackPackageActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="328dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/roundcornerbackground"
+        android:paddingLeft="32dp"
+        android:paddingTop="8dp"
+        android:paddingRight="32dp">
+
+        <TextView
+            android:id="@+id/tvAddPackage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Package tracking"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvIconClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_close_24"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/etTrackingNumber"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/roundcorneredittext"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddPackage">
+            <TextView
+                android:id="@+id/tvTitlePackageStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In transit"
+                android:layout_marginTop="4sp"
+                android:textColor="@color/customPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery in progress"
+                android:textColor="@color/customTeste"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitlePackageStatus"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_arrow_forward_ios_24"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+                //android:layout_marginBottom="24dp"
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvTrackingNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LB524259080HK"
+            app:layout_constraintTop_toBottomOf="@id/etTrackingNumber"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tvTrackingNumberDescription"
+            android:layout_height="wrap_content"
+            android:text="Tracking number"
+            app:layout_constraintTop_toBottomOf="@id/tvTrackingNumber"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvDestinationCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jaboatao dos Guararapes"
+            app:layout_constraintTop_toBottomOf="@id/tvTrackingNumberDescription"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tvDestinationCityDescription"
+            android:layout_height="wrap_content"
+            android:text="Destinationo city"
+            app:layout_constraintTop_toBottomOf="@id/tvDestinationCity"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/bt_new_package"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/roundcornerbutton"
+            android:text="track your package"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDestinationCityDescription" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
