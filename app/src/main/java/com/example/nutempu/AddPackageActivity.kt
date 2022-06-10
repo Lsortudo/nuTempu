@@ -25,7 +25,7 @@ class AddPackageActivity : AppCompatActivity() {
 
         binding.tvIconClose.setOnClickListener {
             Intent(this, MainActivity::class.java).also {
-                startActivity(it)
+                finish()
             }
         }
         binding.btNewPackage.setOnClickListener {
@@ -37,7 +37,7 @@ class AddPackageActivity : AppCompatActivity() {
                 apply()
             }
             Intent(this, MainActivity::class.java).also {
-                startActivity(it)
+                finish()
             }
             //Toast.makeText(getApplicationContext(), TrackingNumber, Toast.LENGTH_LONG).show()
         }

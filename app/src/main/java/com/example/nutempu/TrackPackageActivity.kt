@@ -14,9 +14,10 @@ class TrackPackageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTrackPackageBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.tvIconClose.setOnClickListener {
             Intent(this, MainActivity::class.java).also {
-                startActivity(it)
+                finish()
             }
         }
     }
