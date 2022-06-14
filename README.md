@@ -24,22 +24,22 @@ Link to API (**docs**) -> [Correios.](https://cws.correios.com.br/ajuda)
 
 ### Checkboxes
 
- - [x] Project idea;
- - [x] Design;
- - [x] Readme;
+ - [x]  Project idea;
+ - [x]  Design;
+ - [x]  Readme;
  - [x]  Project setup;
  - [x]  Gradle updated;
  - [x]  Main screen;
- - [ ]  Add package screen;
- - [ ]  Track package screen;
+ - [x]  Add package screen;
+ - [x]  Track package screen;
  - [x]  API connection;
  - [x]  API data;
- - [ ]  Main screen redesign with API data;
+ - [x]  Main screen redesign with API data;
  - [ ]  Track package screen redesign with ROOM/Firebase data;
  - [ ]  Clipboard to paste on Add package tracking number  {**not listed as required, it's a plus**};
- - [x] Have the project available on Github;
- - [ ]  Code refactoring;
- - [ ]  Architeture;
+ - [x]  Have the project available on Github;
+ - [x]  Code refactoring;
+ - [ ]  Architecture;
  - [ ]  Tests;
  - [ ]  Publish the app on Play Store {**not listed as required, it's a plus**};
  - [ ]  Loading animation{**not listed as required, it's a plus**};
@@ -52,8 +52,8 @@ Link to API (**docs**) -> [Correios.](https://cws.correios.com.br/ajuda)
 **May third week** - *none*<br> 
 **May fourth week** - *Main screen design | Gradle updated | API connection | API data*<br> 
 <br>
-**June first week** - *To be defined*<br> 
-**June second week** - *To be defined*<br> 
+**June first week** - *Add package screen design | Track package screen design | Main screen redesign with API data*<br> 
+**June second week** - *Firebase Authentication { SignIn and SignOut } | Firestore | SignUp; SignIn and Form screens*<br> 
 **June third week** - *To be defined*<br> 
 **June fourth week** - *To be defined*<br> 
 
