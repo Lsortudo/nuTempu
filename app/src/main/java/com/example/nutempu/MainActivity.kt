@@ -47,26 +47,10 @@ class MainActivity : AppCompatActivity() {
 
         val sharedPref = getSharedPreferences("preference_file_key", Context.MODE_PRIVATE)
         val trackingNumber = sharedPref.getString("tracking_number", "")
-
-//        val call = RetrofitInitializer().codeService().list(trackingNumber)
-
-
-        val call1 = RetrofitInitializer().codeService().list("LB524259080HK")
-        val call2 = RetrofitInitializer().codeService().list("LB524259080HK")
-        val call3 = RetrofitInitializer().codeService().list("LB524259080HK")
-        val call4 = RetrofitInitializer().codeService().list("LE272070134SE")
-
-        getResultApi(call1)
-        getResultApi(call2)
-        getResultApi(call3)
-        getResultApi(call4)
-
-
-    }
-
-    fun getResultApi(teste: Call<Code>) {
-        teste.enqueue(object : retrofit2.Callback<Code> {
-            override fun onResponse(teste: Call<Code>, response: Response<Code>) {
+        Log.d("TAG", trackingNumber.toString())
+        //val call = RetrofitInitializer().codeService().list(trackingNumber)
+        /*call.enqueue(object: retrofit2.Callback<Code> {
+            override fun onResponse(call: Call<Code>, response: Response<Code>) {
                 response?.body()?.let {
                     val codes: Code = it
                     configureList(codes)
@@ -74,7 +58,34 @@ class MainActivity : AppCompatActivity() {
                 Log.d("TAG", response.body().toString())
             }
 
-            override fun onFailure(teste: Call<Code>, t: Throwable) {
+            override fun onFailure(call: Call<Code>, t: Throwable) {
+                Toast.makeText(this@MainActivity, "Requisiçao falhou", Toast.LENGTH_SHORT).show()
+                Log.d("TAG", t.message.toString())
+            }
+        })*/
+
+        //val call = RetrofitInitializer().codeService().list(trackingNumber)
+
+        val call = RetrofitInitializer().codeService().list("UA429712215VU")
+        val call2 = RetrofitInitializer().codeService().list("LB524259080HK")
+        getResultApi(call)
+        getResultApi(call2)
+
+
+
+    }
+
+    fun getResultApi(callInterna: Call<Code>) {
+        callInterna.enqueue(object : retrofit2.Callback<Code> {
+            override fun onResponse(call: Call<Code>, response: Response<Code>) {
+                response?.body()?.let {
+                    val codes: Code = it
+                    configureList(codes)
+                }
+                Log.d("TAG", response.body().toString())
+            }
+
+            override fun onFailure(call: Call<Code>, t: Throwable) {
                 Toast.makeText(this@MainActivity, "Requisiçao falhou", Toast.LENGTH_SHORT).show()
                 Log.d("TAG", t.message.toString())
             }
